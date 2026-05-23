@@ -24,9 +24,13 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let itemsPurchased = 5;
+let totalCost = 20;
+let firstStatement = customerName + " bought " + itemsPurchased + " items for $" + totalCost + ".";
 
-console.log(d);
+let averageCostPerItem = totalCost / itemsPurchased;
+console.log(firstStatement);
+console.log("Average cost per item: $" + averageCostPerItem.toFixed(2));
+// Additional variables for enhanced functionality
+console.log("Thank you for shopping with us, " + customerName + "!");
